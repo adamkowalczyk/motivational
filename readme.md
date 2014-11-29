@@ -1,6 +1,13 @@
 <h1>Motivational Posters</h1>
 
-<h2>Makers Academy taster weekend</h2>
+<h2>Written at <a href="http://www.makersacademy.com/">Makers Academy</a></h2>
 
-A poster making sinatra app hosted on heroku!
+Hosted on heroku: <a href="https://motivator.herokuapp.com">Motivator</a>
 
+<h3>Technologies</h3>
+<ol>
+<li>Ruby</li>
+<li>Sinatra</li>
+<li>Heroku</li>
+<li>HTML/CSS/JS</li>
+</ol>
