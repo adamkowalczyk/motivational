@@ -35,6 +35,5 @@ $(document).on('change', '#colour', function() {
 });
 
 $(document).on('change', '#align', function() {
-	console.log($(this).val());
 	$("#caption").css("text-align", $(this).val());
 });
