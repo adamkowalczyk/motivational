@@ -5,9 +5,9 @@
 Hosted on heroku: <a href="https://motivator.herokuapp.com">Motivator</a>
 
 <h3>Technologies</h3>
-<ol>
+<ul>
 <li>Ruby</li>
 <li>Sinatra</li>
 <li>Heroku</li>
 <li>HTML/CSS/JS</li>
-</ol>
+</ul>
