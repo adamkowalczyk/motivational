@@ -9,7 +9,7 @@ $(document).on('keydown', '#search-term', function(e) {
 	}
 });
 
-$(document).on('click', '#search-results img', function() {
+$(document).on('mouseover', '#search-results img', function() {
 	var url = $(this).data('url');
 	$("#workspace img").remove();
 	var img = $("<img>").attr('src', url);
@@ -23,7 +23,20 @@ $(document).on('input', '#text', function() {
 });
 
 $(document).on('change', '#left', function() {
-	$("#caption").css("left", $(this).val() + 'px');
+	var leftInput = parseInt($(this).val(), 10);
+	var width = parseInt($("#caption").css("width"), 10);
+	maxLeftInt = (600 - width);
+	maxLeft = maxLeftInt.toString();
+	if ( leftInput + width > 600 )
+	{	
+		$("#caption").css("left", maxLeft + 'px');
+		$("#left").val(maxLeft);
+		
+	}
+	else
+	{
+		$("#caption").css("left", $(this).val() + 'px' );
+	}
 });
 
 $(document).on('change', '#top', function() {
@@ -45,3 +58,5 @@ $(document).on('change', '#colour', function() {
 $(document).on('change', '#align', function() {
 	$("#caption").css("text-align", $(this).val());
 });
+
+

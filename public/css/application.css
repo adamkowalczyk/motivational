@@ -84,8 +84,12 @@ input[type="number"] {
 	font-family: Helvetica;
 	text-shadow: 0 0 0 5px rgba(0,0,0,0.4);
 	width: : 400px;
+	max-width: 600px;
 	font-size: 32px;
 	color: red;
-	margin: 0;
+	margin: 0;§
+	/*white-space: nowrap; */
+    /*overflow: hidden;
+    text-overflow: clip;*/
 }
 
